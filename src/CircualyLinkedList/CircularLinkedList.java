@@ -10,12 +10,8 @@ public class CircularLinkedList<E> {
         tail=null;
         size=0;
     }
-    public int size() {
-        return size;
-    }
-    public boolean isEmpty() {
-        return size() == 0;
-    }
+    public int size() {return size;}
+    public boolean isEmpty() {return size() == 0;}
     public void addFirst(E data){
         if(isEmpty()){
             Node<E> newNode=new Node(data,null);
